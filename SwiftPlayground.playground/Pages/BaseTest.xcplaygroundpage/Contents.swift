@@ -189,3 +189,12 @@ print (newNumbers)
 newNumbers = numbers.map({ number in 3 * number })
 print(newNumbers)
 
+newNumbers = numbers.map({$0 % 2 == 0 ? $0 : 0 })
+print(newNumbers)
+
+let sortedNumbers = numbers.sorted { $0 < $1 }
+print(sortedNumbers)
+
+var aa = 1e-155 //0.00000000000000001
+var a =  1e153 / aa //max 1e+308左右
+
