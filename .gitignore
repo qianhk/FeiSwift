@@ -1,0 +1,30 @@
+
+# xcode noise
+build/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+*.xcuserstate
+.idea/
+LatestBuild
+*.deb
+DynamicLibraries/
+*.zip
+*.dylib
+*.xccheckout
+
+# old skool
+.svn
+
+# osx noise
+.DS_Store
+profile
+
+# vim noise
+*~
+*.swp
+
+Pods/
+Podfile.lock
