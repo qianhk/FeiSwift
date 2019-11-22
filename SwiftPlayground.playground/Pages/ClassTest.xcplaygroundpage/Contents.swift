@@ -173,11 +173,9 @@ enum Suit {
     }
     func color() -> String {
         switch self {
-        case .spades:
+        case .spades, .clubs:
             return "black"
-        case .clubs:
-            return "black"
-        case .hearts:
+        case .hearts, .diamonds:
             return "red"
 //        case .diamonds:
 //            return "red"

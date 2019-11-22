@@ -197,4 +197,94 @@ print(sortedNumbers)
 
 var aa = 1e-155 //0.00000000000000001
 var a =  1e153 / aa //max 1e+308左右
+//var b =  1e154 &* 1e154
+
+greeting = "Kai, Tag0"
+greeting.count
+greeting += "🐶\u{1F1FA}\u{1F1F8}"
+greeting.count
+greeting[greeting.startIndex]
+greeting[greeting.index(before: greeting.endIndex)]
+greeting[greeting.index(before: greeting.index(before: greeting.endIndex))]
+let beforeLastIndex = greeting.index(before: greeting.endIndex)
+greeting[beforeLastIndex]
+greeting[greeting.index(greeting.endIndex, offsetBy: -2)]
+let index = greeting.index(greeting.startIndex, offsetBy: 7)
+greeting[index]
+
+var indices = greeting.indices
+for index in indices {
+    print("\(greeting[index]) ", terminator: (index == beforeLastIndex ? "\n" : " "))
+}
+
+for codeUnit in greeting.utf8 {
+    print("\(codeUnit) ", terminator: "")
+}
+print("")
+
+for codeUnit in greeting.utf16 {
+    print("\(codeUnit) ", terminator: "")
+}
+print("")
+
+for scalar in greeting.unicodeScalars {
+    print("\(scalar.value) ", terminator: "")
+}
+print("")
+
+greeting.unicodeScalars.count
+for scalar in greeting.unicodeScalars {
+    print("\(scalar) ", terminator: "")
+}
+
+let index2 = greeting.firstIndex(of: ",") ?? greeting.endIndex
+let beginning = greeting[..<index2]
+let newString = String(beginning)
+
+// "Voulez-vous un café?" 使用 LATIN SMALL LETTER E WITH ACUTE
+let eAcuteQuestion = "Voulez-vous un caf\u{E9}?"
+
+// "Voulez-vous un café?" 使用 LATIN SMALL LETTER E and COMBINING ACUTE ACCENT
+let combinedEAcuteQuestion = "Voulez-vous un caf\u{65}\u{301}?"
+
+if eAcuteQuestion == combinedEAcuteQuestion {
+    print("These two strings are considered equal")
+}
+
+// 打印输出“These two strings are considered equal”
+
+let oddDigits: Set = [1, 3, 5, 7, 9]
+let evenDigits: Set = [0, 2, 4, 6, 8]
+let singleDigitPrimeNumbers: Set = [2, 3, 5, 7]
+
+oddDigits.union(evenDigits).sorted()
+oddDigits.intersection(evenDigits).sorted()
+oddDigits.subtracting(singleDigitPrimeNumbers).sorted()
+oddDigits.symmetricDifference(singleDigitPrimeNumbers).sorted()
+
+let minuteInterval = 5
+for tickMark in stride(from: 0, to: 15, by: minuteInterval) {
+    print("tick1=\(tickMark)") //不含15
+}
+
+for tickMark in stride(from: 0, through: 15, by: minuteInterval) {
+    print("tick2=\(tickMark)") //含15
+}
+
+func greet(person: String, from hometown: String = "China") -> String {
+    return "Hello \(person)!  com from \(hometown)."
+}
+print(greet(person: "Bill", from: "ShangHai"))
+print(greet(person: "Bill"))
+
+func swapTwoInts(_ a: inout Int, _ b: inout Int) {
+    let temporaryA = a
+    a = b
+    b = temporaryA
+}
+
+var someInt = 3
+var anotherInt = 107
+swapTwoInts(&someInt, &anotherInt)
+print("someInt is now \(someInt), and anotherInt is now \(anotherInt)")
 
