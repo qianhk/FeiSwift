@@ -1,42 +1,47 @@
 //
-//  ContentView.swift
+//  LandmarkDetail.swift
 //  FeiPhoneInfo
 //
-//  Created by 钱红凯 on 2019/11/5.
+//  Created by 钱红凯 on 2019/12/3.
 //  Copyright © 2019 Njnu. All rights reserved.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct LandmarkDetail: View {
+    var landmark: Landmark
+    
     var body: some View {
         VStack {
-            MapView(coordinate: landmarkData[0].locationCoordinate)
+            MapView(coordinate: landmark.locationCoordinate)
                 .frame(height: 300)
 
-            CircleImage(image:Image("fox"))
+            CircleImage(image:landmark.image)
                 .offset(y: -130)
                 .padding(.bottom, -130)
-//                .frame(width: 200, height: 200)
 
             VStack(alignment: .leading) {
-                Text("Turtle Rock")
+                Text(landmark.name)
                     .font(.title)
+
                 HStack(alignment: .top) {
-                    Text("Joshua Tree National Park")
+                    Text(landmark.park)
                         .font(.subheadline)
                     Spacer()
-                    Text("California")
+                    Text(landmark.state)
                         .font(.subheadline)
                 }
             }
             .padding()
+
+            Spacer()
         }
+        .navigationBarTitle(Text(landmark.name), displayMode: .inline)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LandmarkDetail_Preview: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LandmarkDetail(landmark: landmarkData[0])
     }
 }

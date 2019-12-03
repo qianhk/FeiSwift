@@ -9,10 +9,11 @@
 import SwiftUI
 
 struct CircleImage: View {
+    var image: Image
+    
     var body: some View {
         VStack(alignment: .leading) {
-            Image("fox")
-                .resizable()
+            image
                 .frame(width: 160, height: 160)
                 .clipShape(Circle())
                 .overlay(Circle().stroke(Color.red, lineWidth: 1))
@@ -25,7 +26,7 @@ struct CircleImage: View {
 #if DEBUG
 struct CircleImage_Previews: PreviewProvider {
     static var previews: some View {
-        CircleImage()
+        CircleImage(image:Image("fox"))
     }
 }
 #endif

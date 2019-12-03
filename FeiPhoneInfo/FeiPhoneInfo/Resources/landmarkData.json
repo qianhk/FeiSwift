@@ -1,0 +1,28 @@
+[
+    {
+        "name": "ShangHai_SongJiang",
+        "category": "Featured",
+        "city": "Song Jiang",
+        "state": "ShangHai",
+        "id": 1001,
+        "park": "Joshua Tree National Park",
+        "coordinates": {
+            "longitude": 121.22,
+            "latitude": 31.03
+        },
+        "imageName": "turtlerock"
+    },
+    {
+        "name": "Silver Salmon Creek",
+        "category": "Lakes",
+        "city": "Port Alsworth",
+        "state": "Alaska",
+        "id": 4,
+        "park": "Lake Clark National Park and Preserve",
+        "coordinates": {
+            "longitude": -152.665167,
+            "latitude": 59.980167
+        },
+        "imageName": "silversalmoncreek"
+    }
+]
