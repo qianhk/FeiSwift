@@ -288,3 +288,10 @@ var anotherInt = 107
 swapTwoInts(&someInt, &anotherInt)
 print("someInt is now \(someInt), and anotherInt is now \(anotherInt)")
 
+guard someInt == 3 else {
+    print("someInt != 3")
+    return
+}
+
+print("after guar")
+
