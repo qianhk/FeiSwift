@@ -17,6 +17,13 @@ struct Landmark: Hashable, Codable, Identifiable {
     var state: String
     var park: String
     var category: Category
+    var isFavorite: Bool
+    
+//    init() {//Return from initializer without initializing all stored properties
+//        self.id = 0;
+//        self.name = "";
+//        self.isFavorite = false;
+//    }
 
     var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(

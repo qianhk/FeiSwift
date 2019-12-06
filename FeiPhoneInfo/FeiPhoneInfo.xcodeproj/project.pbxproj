@@ -15,6 +15,8 @@
 		2A1040DE239680000041E768 /* turtlerock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A1040DC239680000041E768 /* turtlerock.jpg */; };
 		2A1040E0239680890041E768 /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1040DF239680890041E768 /* LandmarkDetail.swift */; };
 		2A1040E2239684550041E768 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1040E1239684550041E768 /* LandmarkList.swift */; };
+		2A5AD2FE239A491C006A0D45 /* unknown.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A5AD2FD239A491C006A0D45 /* unknown.jpg */; };
+		2A5AD300239A5A1C006A0D45 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5AD2FF239A5A1C006A0D45 /* UserData.swift */; };
 		2A6DADF52371A53300D6ACDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6DADF42371A53300D6ACDE /* AppDelegate.swift */; };
 		2A6DADF72371A53300D6ACDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6DADF62371A53300D6ACDE /* SceneDelegate.swift */; };
 		2A6DADF92371A53300D6ACDE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6DADF82371A53300D6ACDE /* ContentView.swift */; };
@@ -34,6 +36,8 @@
 		2A1040DC239680000041E768 /* turtlerock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = turtlerock.jpg; sourceTree = "<group>"; };
 		2A1040DF239680890041E768 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		2A1040E1239684550041E768 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
+		2A5AD2FD239A491C006A0D45 /* unknown.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = unknown.jpg; sourceTree = "<group>"; };
+		2A5AD2FF239A5A1C006A0D45 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		2A6DADF12371A53300D6ACDE /* FeiPhoneInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeiPhoneInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A6DADF42371A53300D6ACDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A6DADF62371A53300D6ACDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +66,7 @@
 			children = (
 				2A1040D623967F460041E768 /* Data.swift */,
 				2A1040D323967CA10041E768 /* Landmark.swift */,
+				2A5AD2FF239A5A1C006A0D45 /* UserData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -69,6 +74,7 @@
 		2A1040D823967F610041E768 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2A5AD2FD239A491C006A0D45 /* unknown.jpg */,
 				2A1040D923967F760041E768 /* landmarkData.json */,
 				2A1040DB239680000041E768 /* silversalmoncreek.jpg */,
 				2A1040DC239680000041E768 /* turtlerock.jpg */,
@@ -180,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A1040DD239680000041E768 /* silversalmoncreek.jpg in Resources */,
+				2A5AD2FE239A491C006A0D45 /* unknown.jpg in Resources */,
 				2A6DAE012371A53600D6ACDE /* LaunchScreen.storyboard in Resources */,
 				2A1040DE239680000041E768 /* turtlerock.jpg in Resources */,
 				2A1040DA23967F760041E768 /* landmarkData.json in Resources */,
@@ -200,6 +207,7 @@
 				2A6DADF72371A53300D6ACDE /* SceneDelegate.swift in Sources */,
 				2A1040B1239666D30041E768 /* LandmarkRow.swift in Sources */,
 				2A1040E0239680890041E768 /* LandmarkDetail.swift in Sources */,
+				2A5AD300239A5A1C006A0D45 /* UserData.swift in Sources */,
 				2ABA81E22372D63100768792 /* MapView.swift in Sources */,
 				2A6DADF92371A53300D6ACDE /* ContentView.swift in Sources */,
 				2ABA81E42372D64100768792 /* CircleImage.swift in Sources */,
